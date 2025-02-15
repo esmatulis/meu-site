@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Spartan:wght@100..900&display=swap');
+
 /* Definir cores tema Dark */
 :root, 
 :root[data-theme="dark"] {
@@ -38,7 +40,7 @@
 body {
     background: var(--primary-bg-color); /* cor fundo */
     color: var(--primary-text-color); /* #d2d2d2 cor texto */
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #header {
@@ -164,10 +166,11 @@ i {
 
 h1 {
     text-transform: uppercase;
-    font-weight: normal;
+    font-weight: lighter;
     font-size: 3rem;
     letter-spacing: -1.5px;
     color: var(--secondary-text-color);
+    font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h2 {
@@ -175,6 +178,7 @@ h2 {
     font-weight: normal;
     font-size: 20px;
     letter-spacing: 2px;
+    font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 p {
