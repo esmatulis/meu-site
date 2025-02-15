@@ -7,6 +7,7 @@
 body {
     background: #222; /* cor fundo */
     color: whitesmoke; /* #d2d2d2 cor texto */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #header {
@@ -17,10 +18,35 @@ body {
     width: 100%;
     padding: 8px 16px; /* sentido horário */
     z-index: 2;
-    background: lightblue;
+    background: #333;
 }
 
 i {
     color: whitesmoke;
     font-size: 20px;
+}
+
+.menu { /* ul */
+    display: flex;
+    align-items: center;
+    background: #222;
+    gap: 5px;
+    list-style: none;
+}
+
+.menu-item { /* list item = li */
+    width: 100%;
+
+}
+
+.menu-link {
+    color: whitesmoke;
+    display: flex;
+    text-decoration: none;
+
+}
+
+.menu-texto {
+    font-size: 15px;
+    text-transform: uppercase;
 }
