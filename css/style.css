@@ -92,9 +92,18 @@ i {
 
 
 /* CSS Responsivo */
-@media (min-width:768px) {
+@media (min-width:768px) { /* a partir de 768px */
     #header {
         position: fixed;
         border-bottom: 1px solid #f3f3f3;
     }    
+}
+
+@media (max-width:768px) { /* a partir de 768px */
+    #header {
+        display: none;
+    }    
+    .nav-mobile {
+        display: block;
+    }
 }
