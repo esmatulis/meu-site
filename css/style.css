@@ -33,6 +33,15 @@ i {
     list-style: none;
 }
 
+.menu-mobile {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    border-top: 1px solid #f3f3f31f;
+    padding: 30px 0px
+}
+
 .menu-item { /* list item = li */
     width: 100%;
 
@@ -86,24 +95,21 @@ i {
     gap: 20px;
 }
 
-.nav-mobile {
+.header-nav {
     display: none;
 }
 
 
 /* CSS Responsivo */
-@media (min-width:768px) { /* a partir de 768px */
+@media (min-width:768px) { /* maior que 768px */
     #header {
         position: fixed;
-        border-bottom: 1px solid #f3f3f3;
+        border-bottom: 1px solid #f3f3f31f;
     }    
-}
-
-@media (max-width:768px) { /* a partir de 768px */
-    #header {
-        display: none;
-    }    
+    .header-nav {
+        display: flex;
+    }
     .nav-mobile {
-        display: block;
+        display: none;
     }
 }
