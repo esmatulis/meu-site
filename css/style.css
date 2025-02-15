@@ -1,34 +1,30 @@
 /* Definir cores tema Dark */
 :root, 
 :root[data-theme="dark"] {
-    --bg-header: #111217;
-    --bg-body: #111217;
-    --icone-tema: #ccc;
-    --ft-body: #ccc;
-    --menu-link-clr: #aaa;
-    --social-media: #ccc;
-    --active-clr: #fff;
-    --h1-clr: #fff;
-    --bg-btn: #111217;
-    --btn-clr: #ccc;
-    --logo-clr: #fff;
-    --border-clr: #f3f3f31f;
+    --primary-bg-color: #111217;
+
+    --primary-text-color: #ccc;
+    --secondary-text-color: #fff;
+    --terciary-text-color: #eee;
+
+    --primary-icon-color: #ccc;
+    --secondary-icon-color: #aaa;
+    
+    --primary-border-color: #f3f3f31f;
 }
 
 /* Definir cores tema Light */
 :root[data-theme="light"] {
-    --bg-header: #E9E9E9;
-    --bg-body: #E9E9E9;
-    --icone-tema: #222;
-    --ft-body: #222;
-    --menu-link-clr: #555;
-    --social-media: #222;
-    --active-clr: #222;
-    --h1-clr: #0a0a0a;
-    --bg-btn: #E9E9E9;
-    --btn-clr: #222;
-    --logo-clr: #222;
-    --border-clr: #C7C8C9;
+    --primary-bg-color: #E9E9E9;
+
+    --primary-text-color: #222;
+    --secondary-text-color: #0a0a0a;
+    --terciary-text-color: #111;
+
+    --primary-icon-color: #222;
+    --secondary-icon-color: #555;
+    
+    --primary-border-color: #C7C8C9;
 }
 
 
@@ -40,8 +36,8 @@
 }
 
 body {
-    background: var(--bg-body); /* cor fundo */
-    color: var(--ft-body); /* #d2d2d2 cor texto */
+    background: var(--primary-bg-color); /* cor fundo */
+    color: var(--primary-text-color); /* #d2d2d2 cor texto */
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -53,7 +49,7 @@ body {
     width: 100%;
     padding: 8px 16px; /* sentido horário */
     z-index: 2;
-/*     background: var(--bg-header); */
+/*     background: var(--primary-bg-color); */
 }
 
 i {
@@ -73,7 +69,7 @@ i {
     position: fixed;
     bottom: 0;
     justify-content: space-between;
-    border-top: 1px solid var(--border-clr);
+    border-top: 1px solid var(--primary-border-color);
     padding: 30px 0px
 }
 
@@ -83,7 +79,7 @@ i {
 }
 
 .menu-link {
-/*     color: var(--menu-link-clr); */
+/*     color: var(--secondary-icon-color); */
     display: flex;
     text-decoration: none;
 
@@ -105,24 +101,24 @@ i {
 .menu-link.active .menu-texto,
 .menu-link:hover .menu-icone,
 .menu-link:hover .menu-texto {
-    color: var(--active-clr);
+    color: var(--terciary-text-color);
 }
 
 /* Não selecionados */
 .menu-icone,
 .menu-texto {
     font-weight: 600;
-    color: var(--menu-link-clr);
+    color: var(--secondary-icon-color);
 }
 
 .menu-social .menu-icone,
 .menu-social .menu-texto {
     font-weight: 600;
-    color: var(--social-media);
+    color: var(--primary-icon-color);
 }
 
 #logo g {
-    fill: var(--logo-clr);
+    fill: var(--terciary-text-color);
 }
 /* .menu-link:hover .menu-texto {
     font-size: 0.9rem
@@ -145,7 +141,7 @@ i {
 
 #toggleTheme {
     font-size: 24px;
-    color: var(--icone-tema);
+    color: var(--primary-icon-color);
     cursor: pointer;
     transition: ease-in-out .4s;
 }
@@ -171,7 +167,7 @@ h1 {
     font-weight: normal;
     font-size: 3rem;
     letter-spacing: -1.5px;
-    color: var(--h1-clr);
+    color: var(--secondary-text-color);
 }
 
 h2 {
@@ -186,29 +182,29 @@ p {
 }
 
 .btn {
-    border: 1px solid var(--btn-clr);
+    border: 1px solid var(--primary-text-color);
     padding: 8px 20px;
     text-transform: uppercase;
     font-weight: normal;
-    background-color: var(--bg-btn);
-    color: var(--btn-clr);
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
     border-radius: 50px;
     font-size: 15px;
     cursor: pointer;
 }
 
 .btn:hover {
-    color: var(--bg-btn);
-    background: var(--btn-clr);
+    color: var(--primary-bg-color);
+    background: var(--primary-text-color);
 }
 
 /* CSS Responsivo */
 @media (min-width:768px) { /* maior que 768px */
     #header {
         position: fixed;
-        border-bottom: 1px solid var(--border-clr);
+        border-bottom: 1px solid var(--primary-border-color);
         padding: 16px 80px;
-        background: var(--bg-header);
+        background: var(--primary-bg-color);
     }    
     .header-nav {
         display: flex;
