@@ -105,7 +105,7 @@ body {
 }
 
 .menu-texto {
-    font-size: .8rem;
+    font-size: 1rem;
     text-transform: uppercase;
 }
 
@@ -177,7 +177,7 @@ body {
 h1 {
     text-transform: uppercase;
     font-weight: lighter;
-    font-size: 3rem;
+    font-size: 60px;
     letter-spacing: -1px;
     color: var(--secondary-text-color);
     font-family: var(--h1);
@@ -186,13 +186,18 @@ h1 {
 h2 {
     text-transform: uppercase;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 30px;
     letter-spacing: 1px;
     font-family: var(--h2);
+    text-align: center;
+}
+
+main h2 {
+    text-align: left;
 }
 
 p {
-    font-size: small;
+    font-size: 16px;
 }
 
 .btn {
@@ -252,6 +257,12 @@ a {
     gap: 50px;
 }
 
+.projeto-container {
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
 .projeto-card {
     display: flex;
     flex-direction: column;
@@ -267,7 +278,29 @@ a {
     pointer-events: none;
 }
 
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px
+}
 
+.card-title {
+    font-family: var(--h2);
+    font-size: 25px;
+
+}
+
+.card-description {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.card-list {
+    list-style: "# ";
+    margin-left: 15px;
+}
 
 /* CSS Responsivo */
 @media (min-width:768px) { /* maior que 768px */
@@ -291,6 +324,19 @@ a {
         flex-direction: column;
         align-items: flex-start;
     }
+}
+
+/* 992px */
+@media (min-width: 992px) {
+    .projeto-card {
+        flex-direction: row;
+        gap: 100px
+    }
+    .card-img {
+        width: 55%;
+    }
+
+
 }
 
 /* 1200px */
