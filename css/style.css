@@ -105,7 +105,7 @@ body {
 }
 
 .menu-texto {
-    font-size: 1rem;
+    font-size: .8rem;
     text-transform: uppercase;
 }
 
@@ -298,8 +298,14 @@ a {
 }
 
 .card-list {
-    list-style: "# ";
+    list-style: "▶️ ";
     margin-left: 15px;
+}
+
+card-item {
+    margin-left: 10px;
+    font-size: 18px;
+    margin-bottom: 5px;
 }
 
 /* CSS Responsivo */
@@ -331,6 +337,10 @@ a {
     .projeto-card {
         flex-direction: row;
         gap: 100px
+    }
+    .projeto-card:nth-child(even) {
+        flex-direction: row-reverse;
+        justify-content: space-between;
     }
     .card-img {
         width: 55%;
