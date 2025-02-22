@@ -64,8 +64,9 @@ body {
 /*     background: var(--primary-bg-color); */
 }
 
-i {
-    font-size: 20px;
+.header-logo .logo {
+    width: 3.5rem;
+    height: 3.5rem
 }
 
 .menu { /* ul */
@@ -82,7 +83,9 @@ i {
     bottom: 0;
     justify-content: space-between;
     border-top: 1px solid var(--primary-border-color);
-    padding: 30px 0px
+    padding: 30px 0px;
+    gap: 0px;
+    
 }
 
 .menu-item { /* list item = li */
@@ -95,6 +98,10 @@ i {
     display: flex;
     text-decoration: none;
 
+}
+
+a {
+    text-decoration: none;
 }
 
 .menu-texto {
@@ -193,19 +200,37 @@ p {
 }
 
 .btn {
-    border: 1px solid var(--primary-text-color);
-    padding: 8px 20px;
-    text-transform: uppercase;
-    font-weight: normal;
-    background-color: var(--primary-bg-color);
-    color: var(--primary-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: transparent;
+    width: 100%;
     border-radius: 50px;
-    font-size: 15px;
+    border: none;
+    padding: 8px 20px;
     cursor: pointer;
+    color: var(--primary-text-color);
 }
 
-.btn:hover {
+.btn-primary {
+    border: 1px solid var(--primary-text-color);
+}
+
+.btn span {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.btn i {
+    font-size: 18px;
+}
+
+.btn:hover span, .btn:hover i {
     color: var(--primary-bg-color);
+}
+
+.btn-primary:hover {
     background: var(--primary-text-color);
 }
 
@@ -224,7 +249,7 @@ p {
         display: none;
     }
     #home {
-        padding: 128px 96px 64px 96px;
+        padding: 120px 96px 64px 96px;
     }
     .main-content {
         display: flex;
