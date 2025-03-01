@@ -473,7 +473,6 @@ a {
     justify-content: center;
     align-items: center;
     gap: 24px;
-    padding-bottom: 200px;
 }
 
 .contato p {
@@ -488,6 +487,15 @@ a {
     flex-direction: column;
 }
 
+footer p {
+    font-size: 12px;
+    text-align: center;
+}
+
+footer {
+    padding: 10px;
+    padding-bottom: 150px;
+}
 /* CSS Responsivo */
 @media (min-width:768px) { /* maior que 768px */
     #header {
@@ -518,6 +526,10 @@ a {
     }
     .contato {
         padding: 90px;
+    }
+
+    footer {
+        padding-bottom: 10px;
     }
 }
 
@@ -587,6 +599,11 @@ a {
 
     .sobre p, .sobre span, .sobre li {
         font-size: 16px;
+    }
+
+    footer p {
+        font-size: 12px;
+        text-align: center;
     }
 
     .menu-link span {
