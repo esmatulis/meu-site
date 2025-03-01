@@ -348,10 +348,6 @@ a {
     font-size: 14px;
 }
 
-.sobre ul {
-    padding-left: 20px;
-}
-
 .sobre-content1,
 .sobre-content2 {
     display: flex;
@@ -406,6 +402,10 @@ a {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.sobre-content2 .sobre-lista {
+    margin-left: 16px;
 }
 
 .accordion-header {
