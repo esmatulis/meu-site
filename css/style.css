@@ -308,6 +308,18 @@ card-item {
     margin-bottom: 5px;
 }
 
+/* Sobre */
+.sobre {
+
+}
+
+.sobre-perfil {
+    width: 30%;
+    border-radius: 1000px;
+    box-shadow: 0px 0px 10px #4d4d4d9d;
+}
+
+
 /* CSS Responsivo */
 @media (min-width:768px) { /* maior que 768px */
     #header {
