@@ -47,6 +47,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary-bg-color) transparent;
 }
 
 html {
@@ -278,6 +280,13 @@ a {
     padding: 32px 16px;
 }
 
+.contato {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: 200px;
+}
+
 
 /* Projetos */
 .projetos {
@@ -461,6 +470,12 @@ a {
     border-radius: 0;
 }
 
+.menu-link span {
+    color: var(--primary-text-color);
+    font-size: 14px;
+}
+
+
 /* CSS Responsivo */
 @media (min-width:768px) { /* maior que 768px */
     #header {
@@ -551,6 +566,11 @@ a {
 
     .sobre p, .sobre span, .sobre li {
         font-size: 16px;
+    }
+
+    .menu-link span {
+        color: var(--primary-text-color);
+        font-size: 14px;
     }
 }
 
