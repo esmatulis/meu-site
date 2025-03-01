@@ -278,13 +278,8 @@ a {
 /* Atualizações futuras */
 #home, .projetos, .sobre, .contato {
     padding: 32px 16px;
-}
-
-.contato {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    padding-bottom: 200px;
+    border-top: 1px solid var(--primary-border-color);
+    border-bottom: 1px solid var(--primary-border-color);
 }
 
 
@@ -470,11 +465,28 @@ a {
     border-radius: 0;
 }
 
-.menu-link span {
-    color: var(--primary-text-color);
-    font-size: 14px;
+/* Contato */
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding-bottom: 200px;
 }
 
+.contato p {
+    text-align: center;
+}
+
+.menu-link span {
+    color: var(--primary-text-color);
+}
+
+.contato .menu {
+    flex-direction: column;
+}
 
 /* CSS Responsivo */
 @media (min-width:768px) { /* maior que 768px */
@@ -497,6 +509,15 @@ a {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+    }
+    .contato .menu {
+        flex-direction: row;
+    }
+    .contato p {
+        width: 80%;
+    }
+    .contato {
+        padding: 90px;
     }
 }
 
@@ -572,6 +593,9 @@ a {
         color: var(--primary-text-color);
         font-size: 14px;
     }
+    .contato {
+        padding: 90px;
+    }
 }
 
 @media (min-width: 1400px) {
@@ -592,6 +616,9 @@ a {
     .projetos,
     .sobre {
         padding: 160px 240px 64px;
+    }
+    .contato {
+        padding: 90px;
     }
     
     /* #header {
