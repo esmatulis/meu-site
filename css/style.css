@@ -507,9 +507,38 @@ footer a:hover {
     color: #306fb6;
 }
 
-.slide img {
-    width: 50%;
+/* Carousel */
+.projetos h2 {
+    margin-top: 50px;
 }
+
+.carousel {
+    width: 80%;
+    max-width: 70vw;
+    height: 40vh;
+    overflow: hidden;
+    position: relative;
+    border-radius: 12px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px #2c2c2c41;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    transition: transform 0.5 ease-in-out;
+}
+
+.slide {
+    width: 100%;
+}
+
+.slide img {
+    width: 100%;
+}
+
+
+
 /* CSS Responsivo */
 @media (min-width:768px) { /* maior que 768px */
     #header {
