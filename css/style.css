@@ -513,13 +513,13 @@ footer a:hover {
         border-bottom: 1px solid var(--primary-border-color);
         padding: 16px 80px;
         background: var(--primary-bg-color);
-    }    
+    }      
     .header-nav {
         display: flex;
-        min-width: 34%;
     }
+    .header-nav,
     .header-toggle {
-        min-width: 34%;
+        min-width: 30%;
     }
     .nav-mobile {
         display: none;
