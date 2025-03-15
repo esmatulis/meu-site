@@ -506,6 +506,10 @@ footer {
 footer a:hover {
     color: #306fb6;
 }
+
+.slide img {
+    width: 50%;
+}
 /* CSS Responsivo */
 @media (min-width:768px) { /* maior que 768px */
     #header {
