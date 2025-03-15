@@ -34,11 +34,11 @@
         }
         .navigation {
             position: absolute;
-            top: 50%;
+            top: 40%;
             width: 100%;
             display: flex;
             justify-content: space-between;
-            transform: translateY(-50%);
+            height: 100%;
         }
         .nav-btn {
             color: rgba(255, 255, 255, 0.756);
@@ -57,11 +57,15 @@
 #slide1:checked ~ .navigation label[for="slide2"].next,
 #slide2:checked ~ .navigation label[for="slide3"].next,
 #slide3:checked ~ .navigation label[for="slide1"].next {
-display: block}
+display: block;
+position: absolute;
+right: 0px;}
 #slide1:checked ~ .navigation label[for="slide3"].prev,
 #slide2:checked ~ .navigation label[for="slide1"].prev,
 #slide3:checked ~ .navigation label[for="slide2"].prev {
-display: block}
+display: block;
+position: absolute;
+left: 0px;}
     </style>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -82,8 +86,6 @@ display: block}
             <label for="slide1" class="nav-btn prev"><i class="bi bi-caret-left-fill"></i></label>
             <label for="slide3" class="nav-btn next"><i class="bi bi-caret-right-fill"></i></label>
             <label for="slide2" class="nav-btn prev"><i class="bi bi-caret-left-fill"></i></label>
-            <label for="slide1" class="nav-btn next"><i class="bi bi-caret-right-fill"></i></label>
-            <label for="slide3" class="nav-btn prev"><i class="bi bi-caret-left-fill"></i></label>
             <label for="slide2" class="nav-btn next"><i class="bi bi-caret-right-fill"></i></label>
         </div>
     </div>

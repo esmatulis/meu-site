@@ -493,6 +493,41 @@ a {
     flex-direction: column;
 }
 
+/* Forms */
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgb(122, 122, 122);
+    border-radius: 8px;
+}
+
+.form-contato input,
+.form-contato textarea {
+    padding: 12px;
+    width: 100%;
+    border: 1px solid var(--primary-border-color);
+    border-radius: 6px;
+    color: var(--primary-text-color);
+    background: var(--secondary-bg-color);
+    font-size: 16px;
+    outline: none;
+    transition: 0.3 ease-in-out;
+}
+
+.form-contato input:focus,
+.form-contato textarea:focus {
+    border-color: var(--primary-text-color);
+}
+
+.form-contato textarea {
+    
+}
+
 footer p {
     font-size: 12px;
     text-align: center;

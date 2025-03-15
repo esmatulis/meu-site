@@ -7,37 +7,454 @@
     <title>Erica Matulis | Portfolio</title>
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-
+<!-- Shift +  + A  para comentários -->
+<!-- Shift +  + F para formatar o código, para indentação -->
+<!-- Shift +  + Seta pra baixo para copiar linha de cima para baixo -->
+<!-- Ctrl + Espaço para automaticamente completar links -->
 
 <body>
-    <div class="carousel-wrapper">
-        <span id="slide-1"></span>
-        <span id="slide-2"></span>
-        <span id="slide-3"></span>
-        <div class="carousel-slide slide-1">
-          <div class="container">
-            <img src="img/slides/slide1.jpg" alt="Imagem abstrata colorida com formas geométricas">
-          </div>
-          <a class="arrow arrow-prev" href="#slide-3"></a>
-          <a class="arrow arrow-next" href="#slide-2"></a>
+    <!-- MENU -->
+    <header id="header">
+        <nav class="header-nav">
+            <ul class="menu menu-principal"> <!-- lista não ordenada -->
+                <li class="menu-item">
+                    <a href="#home" class="menu-link active">
+                        <span class="menu-texto">Home</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#projetos" class="menu-link">
+                        <span class="menu-texto">Projetos</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#sobre" class="menu-link">
+                        <span class="menu-texto">Sobre</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#contato" class="menu-link">
+                        <span class="menu-texto">Contato</span>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <!-- LOGO -->
+        <div class="header-logo">
+            <a href="#home">
+                <img src="img/logoB.svg" alt="Logo for the website. Displays letters E and M" class="logo">
+            </a>
         </div>
-        <div class="carousel-slide slide-2">
-          <div class="container">
-            <img src="img/slides/slide2.jpg" alt="Fundo futurista azul com luzes de néon">
-          </div>
-          <a class="arrow arrow-prev" href="#slide-1"></a>
-          <a class="arrow arrow-next" href="#slide-3"></a>
+
+        <!-- trocar cor tema -->
+        <div class="header-toggle">
+            <i id="toggleTheme" class="bi bi-sun"></i> <!-- i = ícone -->
         </div>
+
+    </header>
+    <!-- FIM MENU DESKTOP -->
+
+
+    <!-- Menu mobile -->
+    <nav class="nav-mobile">
+        <ul class="menu menu-mobile">
+            <li class="menu-item">
+                <a href="#home" class="menu-link active">
+                    <i class="menu-icone bi bi-house-door"></i>
+                    <span class="menu-texto">
+                        Home
+                    </span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#projetos" class="menu-link">
+                    <i class="menu-icone bi bi-window-stack"></i>
+                    <span class="menu-texto">
+                        Projetos
+                    </span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#sobre" class="menu-link">
+                    <i class="menu-icone bi bi-person-fill"></i>
+                    <span class="menu-texto">
+                        Sobre
+                    </span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#contato" class="menu-link">
+                    <i class="menu-icone bi bi-envelope-fill"></i>
+                    <span class="menu-texto">
+                        Contato
+                    </span>
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+    <!-- Fim menu mobile -->
+
+    <main id="home">
+        <div class="main-content">
+            <div>
+                <h1>
+                    Erica <b>Matulis</b>
+                </h1>
+                <h2>Desenvolvimento Front-End</br>e Circo</h2>
+            </div>
+            <p>
+                Erica Matulis, SP, Desenvolvedora Front-End e Artista de Circo.
+            </p>
+            <!-- Redes sociais -->
+            <ul class="menu menu-social">
+                <li>
+                    <a href="https://github.com/esmatulis" class="" target="_blank">
+                        <i class="menu-icone bi-github"> </i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/ericaintheair" class="" target="_blank">
+                        <i class="menu-icone bi-instagram"> </i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com/in/ericamatulis" class="" target="_blank">
+                        <i class="menu-icone bi-linkedin"> </i>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- botão externo -->
+            <a href="#projetos">
+                <button class="btn btn-primary">
+                    <span>Ver projetos</span>
+                    <i class="bi bi-arrow-down-short"></i>
+                </button>
+            </a>
+
+        </div>
+
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/5dK6Mb4p3MM" title="Dance Trapeze - Erica Matulis 2022"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+    </main>
+
+    <section id="projetos" class="projetos">
+        <h2>Projetos</h2>
+        <div class="projeto-container">
+            <div class="projeto-card">
+                <img src="img/projetos/projeto1.jfif" alt="" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">My Piano</h3>
+                    <p class="card-description">
+                        A fun game where you can follow along a song on the piano.
+                    </p>
+
+                    <ul class="card-list">
+                        <li class="card-item">React</li>
+                        <li class="card-item">CSS</li>
+                        <li class="card-item">JavaScript</li>
+                    </ul>
+
+
+                    <div>
+                        <a href="" class="" target="_blank">
+                            <i class="menu-icone bi-github"> </i>
+                        </a>
+                        <a href="" class="" target="_blank">
+                            <i class="menu-icone bi bi-laptop"></i>
+                        </a>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="projeto-card">
+
+                <img src="img/projetos/projeto2.webp" alt="" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Shoppies</h3>
+                    <p class="card-description">
+                        A website where you can search for and nominate movies for the Shoppies award.
+                    </p>
+
+                    <ul class="card-list">
+                        <li class="card-item">HTML</li>
+                        <li class="card-item">CSS</li>
+                    </ul>
+
+
+                    <div>
+                        <a href="" class="" target="_blank">
+                            <i class="menu-icone bi-github"> </i>
+                        </a>
+                        <a href="" class="" target="_blank">
+                            <i class="menu-icone bi bi-laptop"></i>
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="projeto-card">
+                <img src="img/projetos/projeto3.jpg" alt="" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Broken Wings</h3>
+                    <p class="card-description">
+                        Aerial straps act performed at the Shawn Festival.
+                    </p>
+
+
+                    <div>
+                        <a href="" class="" target="_blank">
+                            <i class="menu-icone bi-youtube"> </i>
+                        </a>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
         
-         <div class="carousel-slide slide-3">
-          <div class="container">
-            <img src="img/slides/slide3.jpg" alt="Design minimalista preto e branco com padrões suaves">
-          </div>
-          <a class="arrow arrow-prev" href="#slide-2"></a>
-          <a class="arrow arrow-next" href="#slide-1"></a>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <h2>Galeria</h2>
+
+        <div class="carousel">
+            <input type="radio" name="radio" id="slide1" checked>
+            <input type="radio" name="radio" id="slide2">
+            <input type="radio" name="radio" id="slide3">
+    
+            <div class="slides">
+                <div class="slide"><img src="img/slides/slide1.jpg" alt="Imagem 1"></div>
+                <div class="slide"><img src="img/slides/slide2.jpg" alt="Imagem 2"></div>
+                <div class="slide"><img src="img/slides/slide3.jpg" alt="Imagem 3"></div>
+            </div>
+            
+            <div class="navigation">
+                <label for="slide1" class="nav-btn prev"><i class="bi bi-caret-left-fill"></i></label>
+                <label for="slide3" class="nav-btn next"><i class="bi bi-caret-right-fill"></i></label>
+                <label for="slide2" class="nav-btn prev"><i class="bi bi-caret-left-fill"></i></label>
+                <label for="slide2" class="nav-btn next"><i class="bi bi-caret-right-fill"></i></label>
+            </div>
         </div>
-      </div>
+    </section>
+    <!-- Fim Projetos -->
+
+    <section id="sobre" class="sobre">
+
+        <div class="sobre-content1">
+
+            <img src="img/avatar.jpg" alt="A young woman holding her left leg in a split" class="sobre-perfil">
+
+            <div class="sobre-descricao">
+
+                <h2>Sobre Mim</h2>
+                <p>
+                    Erica Matulis. Entusiasta por tecnologia 💻, circo 🎪 e design ✍. Atualmente trabalho como
+                    desenvolvedora de software.
+                </p>
+
+                <div class="sobre-skills">
+                    <i class="bi bi-translate"></i> <span>Inglês: Fluente</span>
+                    <i class="bi bi-file-earmark-code-fill"></i> <span>Linguagens: Python, Java, JavaScript, HTML, CSS,
+                        Angular</span>
+                </div>
+
+                <div class="descricao-button">
+                    <a href="https://ca.linkedin.com/in/ericamatulis" target="_blank">
+                        <button class="btn btn-primary">
+                            <span>Conecte-se Comigo</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="sobre-content2">
+            <div class="col1">
+                <div class="row1">
+
+                    <h3>Formação</h3>
+
+                    <h4>Estatística e Psicologia</h4>
+                    <span>Jun 2018</span>
+
+                    <div class="sobre-icones">
+                        <i class="bi bi-bank"></i>
+                        <span>Universidade de Toronto</span>
+                    </div>
+
+                    <div class="sobre-icones">
+                        <i class="bi bi-mortarboard"></i>
+                        <span>Bacharel</span>
+                    </div>
+
+                </div> <!-- Fim Row 1 -->
+
+                <div class="row2">
+
+                    <h3>Experiências</h3>
+
+                    <h4>Desenvolvedora de Software</h4>
+                    <span>Advantage Group International.</span>
+                    <span>2022 - Atualmente</span>
+
+                    <ul class="sobre-lista">
+                        <li class="sobre-item">PostgreSQL</li>
+                        <li class="sobre-item">Aplicações full-stack</li>
+                        <li class="sobre-item">Tableau</li>
+                    </ul>
+
+                    <br>
+
+                    <h4>Analista Senior</h4>
+                    <span>Advantage Group International.</span>
+                    <span>2017 - 2022</span>
+
+                    <ul class="sobre-lista">
+                        <li class="sobre-item">R</li>
+                        <li class="sobre-item">Power BI</li>
+                        <li class="sobre-item">Insights e dados</li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="col2">
+
+                <h3>Cursos</h3>
+
+                <div class="accordion">
+
+                    <div class="accordion-item active">
+
+                        <button class="accordion-header start">
+                            <span>Spring Boot e Hibernate</span>
+                            <i class="bi bi-caret-down-fill"></i>
+                        </button>
+                        <div class="accordion-body">
+                            <p>Udemy. 33,5 horas.</p>
+                            <p>2022</p>
+                        </div>
+
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header end">
+                            <span>Design de Interfaces Web</span>
+                            <i class="bi bi-caret-down-fill"></i>
+                        </button>
+                        <div class="accordion-body end">
+                            <p>Senai. 60 horas.</p>
+                            <p>2025</p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contato" class="contato">
+        <h2>Contato</h2>
+
+        <p>
+            Estou disponível para orientações e novas conexões. Contate-me via e-mail e conecte-se comigo através das minhas redes sociais.
+        </p>
+
+        <ul class="menu menu-social">
+            <li>
+                <a href="https://github.com/esmatulis" class="menu-link" target="_blank">
+                    <i class="menu-icone bi bi-github"> </i>
+                    <span>GitHub</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://instagram.com/ericaintheair" class="menu-link" target="_blank">
+                    <i class="menu-icone bi bi-instagram"> </i>
+                    <span>Instagram</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://linkedin.com/in/ericamatulis" class="menu-link" target="_blank">
+                    <i class="menu-icone bi bi-linkedin"> </i>
+                    <span>LinkedIn</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://wa.me/+5511987654321" class="menu-link" target="_blank">
+                    <i class="menu-icone bi bi-whatsapp"> </i>
+                    <span>WhatsApp</span>
+                </a>
+            </li>
+        </ul>
+
+        <a href="mailto:erica.matulis2@gmail.com">
+            <button class="btn btn-primary">
+                <i class="menu-icone bi bi-envelope-fill"></i>
+                <span class="email">
+                    erica.matulis2@gmail.com
+                </span>
+            </button>
+        </a>
+    </section>
+
+    <!-- Fim Contato -->
+
+
+    <p>
+        Entre em contato preenchendo o formulário abaixo
+    </p>
+
+    <form action="https://formspree.io/f/meoaoeyj" method="post" class="form-contato"> <!-- formspree -->
+        <!-- Post tem mais segurança, é tratado no servidor -->
+        <label for="nome">
+            Nome
+        </label>
+        <input type="text" name="nome" id="nome" placeholder="Digite o seu nome" required>
+
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" placeholder="Digite o seu email">
+
+        <label for="mensagem">Mensagem</label>
+        <textarea name="mensagem" id="mensagem" required></textarea>
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
+
+
+    </form>
+    
+    
+    <footer>
+        <p>
+            &copy; 2025. Portfolio desenvolvido para fins educativos com base nas aulas no 
+            <a href="#" target="_blank">Senai</a> por <a href="https://github.com/esmatulis" target="_blank">Erica Matulis</a>
+        </p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
