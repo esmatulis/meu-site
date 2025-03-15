@@ -525,7 +525,8 @@ a {
 }
 
 .form-contato textarea {
-    
+    resize: vertical;
+    min-height: 120px;
 }
 
 footer p {
