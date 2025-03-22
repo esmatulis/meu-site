@@ -262,7 +262,7 @@ p, span, li {
     font-size: 18px;
 }
 
-.btn:hover span, .btn:hover i {
+.btn:hover span, .btn:hover i, .btn:hover {
     color: var(--primary-bg-color);
 }
 

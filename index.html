@@ -4,11 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Erica Matulis, Erica, Matulis, dev, desenvolvedor, projetos, contato">
+    <meta name="description" content="Desenvolvimento Front-End e Circo">
+    <meta name="robots" content="index, follow">
     <title>Erica Matulis | Portfolio</title>
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <!-- Shift +  + A  para comentários -->
 <!-- Shift +  + F para formatar o código, para indentação -->
@@ -102,7 +106,7 @@
 
     <main id="home">
         <div class="main-content">
-            <div>
+            <div data-aos="flip-left">
                 <h1>
                     Erica <b>Matulis</b>
                 </h1>
@@ -140,7 +144,7 @@
 
         </div>
 
-        <div class="video">
+        <div   data-aos="fade-up" class="video">
             <iframe src="https://www.youtube.com/embed/5dK6Mb4p3MM" title="Dance Trapeze - Erica Matulis 2022"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -149,10 +153,10 @@
 
     </main>
 
-    <section id="projetos" class="projetos">
+    <section  data-aos="fade-up" id="projetos" class="projetos">
         <h2>Projetos</h2>
         <div class="projeto-container">
-            <div class="projeto-card">
+            <div   data-aos="fade-up" class="projeto-card">
                 <img src="img/projetos/projeto1.jpg" alt="" class="card-img">
                 <div class="card-body">
                     <h3 class="card-title">My Piano</h3>
@@ -181,7 +185,7 @@
 
             </div>
 
-            <div class="projeto-card">
+            <div   data-aos="fade-up" class="projeto-card">
 
                 <img src="img/projetos/projeto2.jpg" alt="" class="card-img">
                 <div class="card-body">
@@ -209,7 +213,7 @@
                 </div>
             </div>
 
-            <div class="projeto-card">
+            <div   data-aos="fade-up" class="projeto-card">
                 <img src="img/projetos/projeto3.jpg" alt="" class="card-img">
                 <div class="card-body">
                     <h3 class="card-title">Broken Wings</h3>
@@ -233,7 +237,7 @@
 
     </section>
 
-    <section class="gallery" id="gallery">
+    <section   data-aos="fade-up" class="gallery" id="gallery">
         <h2>Galeria</h2>
 
         <div class="carousel">
@@ -264,7 +268,7 @@
     </section>
     <!-- Fim Projetos -->
 
-    <section id="sobre" class="sobre">
+    <section   data-aos="fade-up" id="sobre" class="sobre">
 
         <div class="sobre-content1">
 
@@ -384,7 +388,7 @@
 
     </section>
 
-    <section id="contato" class="contato">
+    <section  data-aos="fade-up" id="contato" class="contato">
         <h2>Contato</h2>
 
         <p>
@@ -433,7 +437,7 @@
             Entre em contato preenchendo o formulário abaixo
         </p>
 
-        <form action="https://formspree.io/f/meoaoeyj" method="post" class="form-contato"> <!-- formspree -->
+        <form  data-aos="fade-up" action="https://formspree.io/f/meoaoeyj" method="post" class="form-contato"> <!-- formspree -->
             <!-- Post tem mais segurança, é tratado no servidor -->
             <label for="nome">
                 Nome
@@ -466,6 +470,10 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();
+      </script>
+
 </body>
 
 </html>
