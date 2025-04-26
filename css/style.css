@@ -102,7 +102,7 @@ body {
     border-top: 1px solid var(--primary-border-color);
     padding: 30px 0px;
     gap: 0px;
-    
+    z-index: 99;
 }
 
 .menu-item { /* list item = li */
