@@ -270,6 +270,20 @@ p, span, li {
     background: var(--primary-text-color);
 }
 
+.projetos .btn-primary {
+    border: none;
+    
+}
+
+.projetos .btn:hover span, .projetos .btn:hover i, .projetos .btn:hover {
+    color: var(--primary-text-color);
+    font-weight: bold;
+}
+
+.projetos .btn-primary:hover {
+    background: var(--primary-bg-color);
+}
+
 a {
     text-decoration: none;
     color: var(--primary-text-color);
